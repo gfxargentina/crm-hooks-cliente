@@ -44,8 +44,8 @@ const Header = () => {
 
 
     return ( 
-        <div className="flex justify-between mb-8">
-            <p className="mr-3">Hola {nombre} {apellido}</p>
+        <div className="sm:flex sm:justify-between mb-8">
+            <p className="mr-3 mb-5 lg:mb-0">Hola {nombre} {apellido}</p>
             <button 
                     onClick={() => cerrarSesion()  }
                     type="button" 

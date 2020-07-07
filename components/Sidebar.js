@@ -31,6 +31,25 @@ const Sidebar = () => {
                 </li>
             </nav>
 
+            <div className="sm:mt-10">
+                <p className="text-white text-2xl font-black hover:text-teal-600" >Otras Opciones</p>
+            </div>
+
+            <nav className="mt-5 list-none" >
+            <li className={router.pathname === "/mejoresvendedores" ? "bg-blue-800 p-2" : "p-2"} >
+                <Link href="/mejoresvendedores" >
+                    <a className="text-white mb-2 block hover:text-teal-600">Mejores Vendedores</a> 
+                    </Link>
+                </li>
+
+                <li className={router.pathname === "/mejoresclientes" ? "bg-blue-800 p-2" : "p-2"} >
+                <Link href="/mejoresclientes" >
+                    <a className="text-white mb-2 block hover:text-teal-600">Mejores Clientes</a> 
+                    </Link>
+                </li>
+
+            </nav>
+            
         </aside>
      );
 }
