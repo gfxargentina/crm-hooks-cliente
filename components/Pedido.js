@@ -50,25 +50,42 @@ const Pedido = ({pedido}) => {
 
     const [ estadoPedido, setEstadoPedido ] = useState(estado);
     const [ clase, setClase ] = useState('');
+    const [ borderClase, setBorderClase ] = useState('');
+    
 
 
+//hook para cambiar el color segun el estado del pedido
     useEffect(() => {
         if(estadoPedido) {
-            setEstadoPedido(estadoPedido)
+            setEstadoPedido(estadoPedido)     
         }
-        clasePedido();
-    }, [estadoPedido]);
-
-    //funcion que modifica el color del pedido de acuerdo a su estado
+        //funcion que modifica el color del pedido de acuerdo a su estado seleccionado
     const clasePedido = () => {
         if(estadoPedido === 'PENDIENTE') {
             setClase('border-yellow-800 bg-yellow-500 ')
         } else if (estadoPedido === 'COMPLETADO') {
-            setClase('border-green-800 bg-green-500')
+            setClase('border-green-800 bg-green-500 ')
         } else {
-            setClase('border-red-800 bg-red-500')
+            setClase('border-red-800 bg-red-800 ')
         }
     }
+ //funcion que modifica el color del borde superior segun el estado del pedido
+    const colorBorder = () => {
+        if(estadoPedido === 'PENDIENTE') {
+            setBorderClase('border-yellow-500 ')
+        } else if (estadoPedido === 'COMPLETADO') {
+            setBorderClase('border-green-500')
+        } else {
+            setBorderClase('border-red-800 ')
+        }
+    }
+        clasePedido();
+        colorBorder();
+    }, [estadoPedido]);
+
+    
+
+    
 
     const cambiarEstadoPedido = async nuevoEstado => {
         //console.log(nuevoEstado)
@@ -123,7 +140,7 @@ const Pedido = ({pedido}) => {
     }
 
     return (
-            <div className={` ${clase} border-t-4 mt-4 bg-white rounded p-6 md:grid md:grid-cols-2 md:gap-4 shadow-lg`}>
+            <div className={`${borderClase} border-t-4 mt-4 bg-white rounded p-6 md:grid md:grid-cols-2 md:gap-4 shadow-lg`}>
                 <div>
                   <p className="font-bold text-gray-800">Cliente: {nombre} {apellido} </p>
                 
@@ -140,14 +157,16 @@ const Pedido = ({pedido}) => {
                   )}
 
                   <h2 className="text-gray-800 font-bold mt-10">Estado Pedido:</h2>
-                  <select className={`  ${clase} mt-2 appearance-none bg-blue-600 border border-blue-600 text-white p-2 text-center rounded leading-tight focus:outline-none focus:bg-blue-600 focus:border-blue-500 uppercase text-xs font-bold `}
+                  
+                  <select className={`${clase} mt-2 appearance-none text-white p-2 text-center rounded leading-tight focus:outline-none uppercase text-xs font-bold  `}
                           value={estadoPedido}
                           onChange={ e => cambiarEstadoPedido( e.target.value ) }  
                   >
-                        <option value="COMPLETADO">COMPLETADO</option>
-                        <option value="PENDIENTE">PENDIENTE</option>
-                        <option value="CANCELADO">CANCELADO</option>
+                        <option className="bg-green-500" value="COMPLETADO">COMPLETADO</option>
+                        <option className="bg-yellow-500" value="PENDIENTE">PENDIENTE</option>
+                        <option className="bg-red-800" value="CANCELADO">CANCELADO</option>
                   </select>
+                  
 
                 </div>
                    
