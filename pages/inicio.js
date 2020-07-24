@@ -1,7 +1,12 @@
 import React from 'react';
 import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Inicio = () => {
+
+    //Hook routing de next
+    const router = useRouter();
     
     return ( 
         <>
@@ -24,18 +29,22 @@ const Inicio = () => {
                             <a class="mr-5 hover:text-gray-900">Contacto</a>
                             <a class="mr-5 hover:text-gray-900">RH</a>
                           </nav>
-                     
-                     <button className="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 mr-2 md:mt-0">Entrar
+                  <Link href="/login" >
+                     <button className="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 mr-2 md:mt-0">Iniciar Sesion
                        <svg fill="white" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                          <path d="M5 12h14M12 5l7 7-7 7"></path>
                        </svg>
                      </button>
-
+                     </Link>
+                     
+                  <Link href="/nuevacuenta" >
                      <button className="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Registrarse
                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                          <path d="M5 12h14M12 5l7 7-7 7"></path>
                        </svg>
                      </button>
+                     </Link>
+
                    </div>
                  </header>
             </div>
@@ -46,11 +55,17 @@ const Inicio = () => {
                                   de Clientes, Productos y Pedidos.
                                </h1>
                                <p className="mb-8 leading-relaxed">Administre sus Clientes, Productos y Pedidos de forma organizada, tenga toda la información de su negocio
-                               en un solo lugar, vea reportes de sus mejores vendedores y mejore clientes todo en un solo lugar.
+                               en un solo lugar, vea reportes de sus mejores vendedores y mejores clientes todo en un solo lugar.
                                </p>
                                <div className="flex justify-center">
-                                 <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Entrar</button>
+                               <Link href="/login" >
+                                 <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Iniciar Sesion</button>
+                               </Link>
+
+                               <Link href="/nuevacuenta" >
                                  <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Registrarse</button>
+                                 </Link>
+
                                </div>
                              </div>
                              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
