@@ -32,7 +32,7 @@ const { data, loading, error } = useQuery(OBTENER_CLIENTES_USUARIO);
 if(loading) return 'Cargando...' ;
 
 if(!data.obtenerClientesVendedor) {
-  return router.push('/login');
+  return router.push('/inicio');
 }
 
   return (
