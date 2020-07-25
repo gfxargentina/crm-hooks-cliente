@@ -17,9 +17,10 @@ const Inicio = () => {
              <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
              </Head>
 
+            <div className="h-screen">
             <div>
                 <header className="text-gray-700 body-font">
-                   <div className="container mx-auto flex flex-wrap p-5 flex-col min-h-screen  md:flex-row items-center">
+                   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                      <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                      <svg fill="white" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWwidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" ><g><path d="m512 482h-30v-302h-91v302h-30v-182h-90v182h-30v-242h-90v242h-30v-152h-91v152h-30v30h512z"/><path d="m512 120v-120h-121v30h69.789l-144.789 143.789-120-120-191.605 190.606 21.21 21.21 170.395-169.394 120 120 166-165v68.789z"/></g></svg>
                        <span className="ml-3 text-xl">LUIS CRM</span>
@@ -49,7 +50,7 @@ const Inicio = () => {
                    </div>
                  </header>
             </div>
-            <div className="text-gray-700 body-font mt-5 mb-5">
+            <div className="text-gray-700 body-font mt-5 mb-5 flex-grow">
                            <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                              <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">CRM para manejo
@@ -73,6 +74,8 @@ const Inicio = () => {
                                <img className="object-cover object-center rounded" alt="hero" src="https://i.ibb.co/FJgDjKK/CRM-1.jpg" /> 
                              </div>
                            </div>
+                         </div>
+
                          </div>                  
   
 
