@@ -78,9 +78,9 @@ const Inicio = () => {
 
 
 
-
+                         <Footer />
        </>
-       <Footer />
+       
      );
 }
  
