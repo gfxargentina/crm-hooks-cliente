@@ -11,7 +11,7 @@ const Inicio = () => {
     return ( 
         <>
         <Head>
-                 <title>CRM - Administracion de Clientes</title>
+                 <title>CRM - LUIS CHILO</title>
              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossOrigin="anonymous" />
              <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
              </Head>
@@ -20,7 +20,7 @@ const Inicio = () => {
                 <header className="text-gray-700 body-font">
                    <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                      <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                     <svg id="Capa_1" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWwidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" ><g><path d="m512 482h-30v-302h-91v302h-30v-182h-90v182h-30v-242h-90v242h-30v-152h-91v152h-30v30h512z"/><path d="m512 120v-120h-121v30h69.789l-144.789 143.789-120-120-191.605 190.606 21.21 21.21 170.395-169.394 120 120 166-165v68.789z"/></g></svg>
+                     <svg fill="white" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWwidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" ><g><path d="m512 482h-30v-302h-91v302h-30v-182h-90v182h-30v-242h-90v242h-30v-152h-91v152h-30v30h512z"/><path d="m512 120v-120h-121v30h69.789l-144.789 143.789-120-120-191.605 190.606 21.21 21.21 170.395-169.394 120 120 166-165v68.789z"/></g></svg>
                        <span className="ml-3 text-xl">LUIS CRM</span>
                      </a>
                      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -48,7 +48,7 @@ const Inicio = () => {
                    </div>
                  </header>
             </div>
-            <div className="text-gray-700 body-font mt-5">
+            <div className="text-gray-700 body-font mt-5 mb-5">
                            <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                              <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">CRM para manejo
@@ -73,6 +73,47 @@ const Inicio = () => {
                              </div>
                            </div>
                          </div>
+
+                         
+  
+
+                                <div className="bg-gray-200 mt-5">
+                                  <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+                                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                      </svg>
+                                      <span className="ml-3 text-xl">CRM LUIS CHILO</span>
+                                    </a>
+                                    <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Luis Chilo —
+                                      <a href="https://twitter.com/gfxargentina" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@LuisChilo</a>
+                                    </p>
+                                    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                                      <a className="text-gray-500">
+                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                                                      </svg>
+                                      </a>
+                                      <a className="ml-3 text-gray-500">
+                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                        </svg>
+                                      </a>
+                                      <a className="ml-3 text-gray-500">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                        </svg>
+                                      </a>
+                                      <a className="ml-3 text-gray-500">
+                                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                        </svg>
+                                      </a>
+                                    </span>
+                                  </div>
+                                </div>
+
 
        </>
      );
