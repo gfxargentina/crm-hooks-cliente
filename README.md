@@ -1,7 +1,7 @@
 # Proyecto CRM React 
 
 Proyecto practico de creación de un **CRM** basico con las funcionalidades de Registro, Login, Creacion de clientes, pedidos y Productos.
-Tecnologias usadas: React, TailwindCSS, Next.js, Apollo, MongoDB y GraphQL
+Tecnologias usadas: NodeJS, React, TailwindCSS, Next.js, Apollo, MongoDB y GraphQL
 
 ![crm react](https://i.ibb.co/ZdHkqZ6/git-repository-react-app-1.jpg)
 
