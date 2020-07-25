@@ -49,7 +49,7 @@ const Header = () => {
             <button 
                     onClick={() => cerrarSesion()  }
                     type="button" 
-                    className="bg-blue-800 w-full sm:w-auto font-bold uppercase text-xs rounded py-1 px-2 text-white shadow-md hover:text-red-600">
+                    className="bg-blue-700 w-full sm:w-auto font-bold uppercase text-xs rounded py-1 px-2 text-white shadow-md hover:text-red-600">
                 Cerrar Sesion</button>
 
         </div>

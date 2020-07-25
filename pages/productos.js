@@ -33,11 +33,11 @@ const Productos = () => {
          <Layout>
              <h1 className="text-2xl text-gray-800 font-light" >Productos</h1>
             <Link href="/nuevoproducto" >
-            <a class="bg-blue-800 px-5 mt-3 inline-block text-white rounded text-sm hover:bg-green-800  mb-3 uppercase font-bold" >Nuevo Producto</a>
+            <a class="bg-blue-700 px-5 mt-3 inline-block text-white rounded text-sm hover:bg-green-800  mb-3 uppercase font-bold" >Nuevo Producto</a>
             </Link>
 
              <table className="table-auto shadow-md mt-10 w-full w-lg " >
-        <thead className="bg-gray-800" >
+        <thead className="bg-blue-700" >
           <tr className="text-white" >
             <th className="w-1/5 py-2" >Nombre</th>
             <th className="w-1/5 py-2" >Cantidad</th>
