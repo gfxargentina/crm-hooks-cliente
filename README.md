@@ -3,7 +3,7 @@
 [Link CRM App aqui ](https://crm-2020-cliente.gfxargentina.vercel.app/inicio)
 
 Proyecto practico de creación de un **CRM** basico con las funcionalidades de Registro, Login, Creacion de clientes, pedidos y Productos.
-Tecnologias usadas: NodeJS, React, TailwindCSS, Next.js, Apollo, MongoDB y GraphQL
+Tecnologias usadas: NodeJS, React, TailwindCSS, Next.js, Apollo, MongoDB y GraphQL, Formik
 
 ![crm react](https://i.ibb.co/ZdHkqZ6/git-repository-react-app-1.jpg)
 
